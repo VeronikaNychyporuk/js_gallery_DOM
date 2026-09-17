@@ -6,7 +6,7 @@ const largeImage = document.querySelector('.gallery__large-img');
 galleryList.addEventListener('click', (e) => {
   e.preventDefault();
 
-  const img = event.target.closest('.list-item__link');
+  const img = e.target.closest('.list-item__link');
 
   if (!img) {
     return;
